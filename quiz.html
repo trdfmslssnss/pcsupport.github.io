@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест: Какой компьютер вам нужен?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Тест: Какой компьютер вам нужен?</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="cpu.html">Процессор</a></li>
+                <li><a href="gpu.html">Видеокарта</a></li>
+                <li><a href="ram.html">Оперативная память</a></li>
+                <li><a href="storage.html">Накопители</a></li>
+                <li><a href="compare.html">Сравнение</a></li>
+                <li><a href="quiz.html">Тест</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="white-block">
+            <h2>Ответьте на 3 вопроса, чтобы узнать, какой компьютер вам подходит</h2>
+            <form id="quiz-form">
+                <!-- Вопрос 1 -->
+                <div class="question">
+                    <h3>1. Для чего вы будете использовать компьютер?</h3>
+                    <label><input type="radio" name="q1" value="office"> Офисные задачи (работа с документами, интернет)</label><br>
+                    <label><input type="radio" name="q1" value="games"> Игры</label><br>
+                    <label><input type="radio" name="q1" value="creative"> Творчество (видеомонтаж, 3D-моделирование)</label><br>
+                    <label><input type="radio" name="q1" value="programming"> Программирование</label>
+                </div>
+
+                <!-- Вопрос 2 -->
+                <div class="question">
+                    <h3>2. Какой бюджет вы готовы выделить на компьютер?</h3>
+                    <label><input type="radio" name="q2" value="low"> До 50 000 ₽</label><br>
+                    <label><input type="radio" name="q2" value="medium"> 50 000 — 100 000 ₽</label><br>
+                    <label><input type="radio" name="q2" value="high"> Более 100 000 ₽</label>
+                </div>
+
+                <!-- Вопрос 3 -->
+                <div class="question">
+                    <h3>3. Как часто вы будете использовать компьютер?</h3>
+                    <label><input type="radio" name="q3" value="rarely"> Редко (1-2 раза в неделю)</label><br>
+                    <label><input type="radio" name="q3" value="often"> Часто (каждый день)</label><br>
+                    <label><input type="radio" name="q3" value="always"> Постоянно (работа или учеба)</label>
+                </div>
+
+                <!-- Добавьте остальные 7 вопросов по аналогии -->
+
+                <!-- Кнопка отправки -->
+                <button type="submit" class="quiz-button">Узнать результат</button>
+            </form>
+        </section>
+
+        <!-- Блок с результатом (скрыт до завершения теста) -->
+        <section id="quiz-result" class="white-block hidden">
+            <h2>Результат теста</h2>
+            <p id="result-text"></p>
+            <button id="restart-quiz" class="quiz-button">Пройти тест еще раз</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Комплектующие компьютера</p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
